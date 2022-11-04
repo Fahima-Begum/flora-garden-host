@@ -23,7 +23,8 @@ function Signuppage() {
     console.log(item);
     axios({
       method: 'post',
-      url: 'https://flora-host.herokuapp.com/uploadSignup',
+      // url: 'http://localhost:5001/uploadSignup',
+      url: 'https://flora-host.herokuapp.com/Signup',
       data: item //formData
     })
   }

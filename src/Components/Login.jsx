@@ -1,6 +1,6 @@
 //import { Routes, Route, useNavigate } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-import { useState, useEffect, React } from "react";
+import { useState, useEff, React } from "react";
 // import { axiosInstance } from "../config";
 import axios from 'axios';
 
@@ -13,7 +13,8 @@ function Login() {
     const [isSubmitted, setIsSubmitted] = useState(false);
     useEffect(() => {
         axios
-            .get("https://flora-host.herokuapp.com/fetchUser")
+            // .get("http://localhost:5001/fetchUser")
+            .get('https://flora-host.herokuapp.com/fetchUser')
             .then((res) => setData(res.data))
             .catch((err) => console.log(err, "it has an error"));
     });
