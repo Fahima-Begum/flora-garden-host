@@ -4,13 +4,12 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import logo from '../asserts/images/logo.jpg'
 
 function Nbar() {
   return (
     <Navbar bg="dark" expand="lg" variant="dark">
       <Container>
-        <img src={logo} style={{ width: "70px", borderRadius: "30px", marginRight: "25px" }} alt="" />
+        <img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWFiNYv5ZEIQL4pg8mE3NIyPYZbthEMU0mqw&usqp=CAU"} style={{ width: "70px", borderRadius: "30px", marginRight: "25px" }} alt="" />
         <Navbar.Brand href="/">FLORA GARDEN</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
