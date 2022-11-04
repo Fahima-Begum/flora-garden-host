@@ -15,8 +15,8 @@ function PlantDetailsForm() {
         console.log(item)
         axios({
             method: 'post',
-            url: 'http://localhost:5001/upload',
-            // url: 'https://flora-host.herokuapp.com/upload',
+            // url: 'http://localhost:5001/upload',
+            url: 'https://flora-host.herokuapp.com/upload',
             data: item //formData
         })
 
