@@ -16,7 +16,8 @@ root.render(
     <Router>
       <Routes>
         {/* <Route path='/' element={<Navbar />}></Route> */}
-        <Route path='https://stellar-blini-f00d5b.netlify.app' element={<Home />}></Route>
+        
+        <Route path='https://stellar-blini-f00d5b.netlify.app/' element={<Home />}></Route>
         <Route path="https://stellar-blini-f00d5b.netlify.app/PlantsDisplay" element={<PlantsDisplay />}></Route>
         <Route path="https://stellar-blini-f00d5b.netlify.app/Login" element={<Login />}></Route>
         <Route path="https://stellar-blini-f00d5b.netlify.app/SignUp" element={<Signuppage />}></Route>
