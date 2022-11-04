@@ -2,8 +2,11 @@ import React, { useState } from 'react'
 import axios from "axios"
 import { Link } from 'react-router-dom';
 import FileBase64 from 'react-file-base64';
+import './form.css'
+import Nbar from './Navbar'
 
 function PlantDetailsForm() {
+
     // const initialValues = { plantName: "" , testImage:""};
     const [item, setItem] = useState({ plantName: '', image: '', desc: '' });
 
@@ -12,8 +15,8 @@ function PlantDetailsForm() {
         console.log(item)
         axios({
             method: 'post',
-            // url: 'http://localhost:5001/upload',
-            url: 'https://flora-host.herokuapp.com/upload',
+            url: 'http://localhost:5001/upload',
+            // url: 'https://flora-host.herokuapp.com/upload',
             data: item //formData
         })
 
@@ -22,9 +25,7 @@ function PlantDetailsForm() {
 
     return (
         <>
-        <div>
-                <Link to='/PlantsDisplay'>Plants Display</Link>
-         </div>
+        <Nbar/>
         <div className="create">
             <h2>Add a New Plant</h2>
             <div className="card p-5" style={{ margin: "50px 1%", border: "2px solid red", borderRadius: "1.5rem" }}>
