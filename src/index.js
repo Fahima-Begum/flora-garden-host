@@ -16,12 +16,12 @@ root.render(
     <Router>
       <Routes>
         {/* <Route path='/' element={<Navbar />}></Route> */}
-        <Route path='/' element={<Home />}></Route>
-        <Route path="/PlantsDisplay" element={<PlantsDisplay />}></Route>
-        <Route path="/Login" element={<Login />}></Route>
-        <Route path="/SignIn" element={<Signuppage />}></Route>
-        <Route path="/Contact" element={<Contact />}></Route>
-        <Route path="/PlantDetailsForm" element={<PlantDetailsForm />}></Route>
+        <Route path='https://stellar-blini-f00d5b.netlify.app' element={<Home />}></Route>
+        <Route path="https://stellar-blini-f00d5b.netlify.app/PlantsDisplay" element={<PlantsDisplay />}></Route>
+        <Route path="https://stellar-blini-f00d5b.netlify.app/Login" element={<Login />}></Route>
+        <Route path="https://stellar-blini-f00d5b.netlify.app/SignUp" element={<Signuppage />}></Route>
+        <Route path="https://stellar-blini-f00d5b.netlify.app/Contact" element={<Contact />}></Route>
+        <Route path="https://stellar-blini-f00d5b.netlify.app/PlantDetailsForm" element={<PlantDetailsForm />}></Route>
       </Routes>
     </Router>
   </React.StrictMode>
