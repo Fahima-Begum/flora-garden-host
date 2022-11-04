@@ -1,6 +1,6 @@
 //import { Routes, Route, useNavigate } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-import { useState, useEff, React } from "react";
+import { useState, useEffect, React } from "react";
 // import { axiosInstance } from "../config";
 import axios from 'axios';
 
