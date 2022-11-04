@@ -21,8 +21,8 @@ function Nbar() {
 
               <NavDropdown.Item href="/Login">Add Plants </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="/SignIn">
-                SignIn
+              <NavDropdown.Item href="/SignUp">
+                SignUp
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/Contact">Contact</Nav.Link>

@@ -11,7 +11,7 @@ function App() {
       {/* <header className="App-header"> */}
         Main Page<br/><br/>
       {/* </header> */}
-      <Link to='PlantDetailsForm'>PlantDetailsForm</Link>
+      <Link to='/PlantDetailsForm'>PlantDetailsForm</Link>
     </div>
   );
 }

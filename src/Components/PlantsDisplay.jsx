@@ -9,7 +9,7 @@ function PlantsDisplay() {
   //const [query, setQuery] = useState("");
   useEffect(() => {
     axios
-      .get('https://flora-host.herokuapp.com/fetch')
+      .get("https://flora-host.herokuapp.com/fetch")
       // .get("http://localhost:5001/fetch")
       .then((res) => setData(res.data))
       .catch((err) => console.log(err, "it has an error"));

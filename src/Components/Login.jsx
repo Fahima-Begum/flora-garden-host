@@ -14,7 +14,7 @@ function Login() {
     useEffect(() => {
         axios
              //.get("http://localhost:5001/fetchUser")
-            .get('https://flora-host.herokuapp.com/fetchUser')
+            .get("https://flora-host.herokuapp.com/fetchUser")
             .then((res) => setData(res.data))
             .catch((err) => console.log(err, "it has an error"));
     });
