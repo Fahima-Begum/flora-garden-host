@@ -1,0 +1,54 @@
+import React, { useState } from 'react'
+import axios from "axios"
+import { Link } from 'react-router-dom';
+import FileBase64 from 'react-file-base64';
+
+function PlantDetailsForm() {
+    // const initialValues = { plantName: "" , testImage:""};
+    const [item, setItem] = useState({ plantName: '', image: '', desc: '' });
+
+    const handleFormSubmit = (event) => {
+        event.preventDefault();
+        console.log(item)
+        axios({
+            method: 'post',
+            url: 'https://flora-host.herokuapp.com/upload',
+            data: item //formData
+        })
+
+    }
+
+
+    return (
+        <>
+        <div>
+                <Link to='/PlantsDisplay'>Plants Display</Link>
+         </div>
+        <div className="create">
+            <h2>Add a New Plant</h2>
+            <div className="card p-5" style={{ margin: "50px 1%", border: "2px solid red", borderRadius: "1.5rem" }}>
+                <div className="card-body">
+                    <form onSubmit={handleFormSubmit}>
+                        <label className="form-label">Product Name:</label>
+                        <input type="text" className="form-control"
+                            onChange={e => setItem({ ...item, plantName: e.target.value })}
+                        />
+                        <label className="form-label">Attach Image</label>
+                        <FileBase64
+                            type="file"
+                            multiple={false}
+                            onDone={({ base64 }) => setItem({ ...item, image: base64 })}
+                        />
+                        <label className="form-label">Description:</label>
+                        <input type="text" className="form-label"
+                            onChange={e => setItem({ ...item, desc: e.target.value })}
+                        />
+                       <button type='submit'>SUBMIT</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        </>
+)}
+
+export default PlantDetailsForm
